@@ -8,7 +8,7 @@ package practica_poo_variables_juan_jimenez;
  *
  * @author ESPE
  */
-public class variables {
+public class practica_poo_variables_juan_jimenez{
 
     /**
      * @param args the command line arguments
@@ -35,11 +35,16 @@ public class variables {
     
     double g = 4.5f;
 
-    string h = "Hola mundo";
+    String h = "Hola mundo";
     boolean i = 5>10;
    
-    System.out.printIn(g);
-    System.out.printIn(a);
-    System.out.printIn(x1);
+    System.out.println(a);
+    System.out.println(b);
+    System.out.print(c);
+    System.out.print(d);
+    System.out.print(e);
+    System.out.println(g);
+    System.out.print(h);
+    System.out.print(i);
     }  
 }
