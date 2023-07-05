@@ -3,10 +3,10 @@ package lab2_2doparcial_juanjimenez;
 
 public class Asignatura {
     private String nombre;
-    private int horario;
+    private Horario horario;
     private Laboratorio laboratorio;
 
-    public Asignatura(String nombre, int horario, Laboratorio laboratorio) {
+    public Asignatura(String nombre, Horario horario, Laboratorio laboratorio) {
         this.nombre = nombre;
         this.horario = horario;
         this.laboratorio = laboratorio;
@@ -21,11 +21,11 @@ public class Asignatura {
         this.nombre = nombre;
     }
 
-    public int getHorario() {
+    public Horario getHorario() {
         return horario;
     }
 
-    public void setHorario(int horario) {
+    public void setHorario(Horario horario) {
         this.horario = horario;
     }
 
@@ -37,4 +37,5 @@ public class Asignatura {
         this.laboratorio = laboratorio;
     }
 }
+
 
