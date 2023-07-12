@@ -13,7 +13,7 @@ public class Estandar extends Productos {
 	public String getSeccion() {
 		return seccion;
 	}
-	//metodo que obtiene el precio total del pedido por medio de "if"
+	//metodo que retorna el precio total del pedido por medio de "if" y realiza el descuento dependiendo de las cantidades
 	public double obtenerPrecioPedido(double prePedido){
 		System.out.println("Ingrese las unidades pedidas del producto: ");
 		unidades = sc.nextInt();

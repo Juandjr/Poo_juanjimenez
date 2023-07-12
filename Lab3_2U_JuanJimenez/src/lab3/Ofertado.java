@@ -13,7 +13,7 @@ public class Ofertado extends Productos {
 	public int getDias() {
 		return dias;
 	}
-	//metodo que obtiene el precio total del pedido por medio de "if"
+	//metodo que retorna el precio total del pedido por medio de "if" y realiza el descuento dependiendo del dia
 	public double obtenerPrecioPedido(double prePedido){
 		System.out.println("Ingrese las unidades pedidas del producto: ");
 		unidades = sc.nextInt();
