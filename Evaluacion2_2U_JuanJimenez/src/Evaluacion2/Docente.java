@@ -20,23 +20,23 @@ public class Docente extends Personal {
 	//metodo que hereda de la clase padre ques sirve para calcular la forma de pagar el sueldo del Docente
 	@Override
     public double metodoDePago(double pagoTotal) {
-		pagoTotal=sueldo;
-		if (comisiones > 0 && comisiones <2) {
-			System.out.println("Se le añadio un valor extra de 50$ por ser de comisiones");
-			pagoTotal=pagoTotal+50;
-		}if (comisiones > 1 && comisiones <3) {
-			System.out.println("Se le añadio un valor extra de 100$ por ser de comisiones");
-			pagoTotal=pagoTotal+100;
-		}if (comisiones > 2 && comisiones <4) {
-			System.out.println("Se le añadio un valor extra de 150$ por ser de comisiones");
-			pagoTotal=pagoTotal+150;
-		}if (comisiones > 3 && comisiones <5) {
-			System.out.println("Se le añadio un valor extra de 200$ por ser de comisiones");
-			pagoTotal=pagoTotal+200;
-		}if (comisiones > 4 && comisiones <6) {
-			System.out.println("Se le añadio un valor extra de 250$ por ser de comisiones");
-			pagoTotal=pagoTotal+250;
-		}
-		return pagoTotal;
-	}
+	pagoTotal=sueldo;
+	if (comisiones > 0 && comisiones <2) {
+		pagoTotal+=pagoTotal+50;
+                       System.out.println("Se le añadio un valor extra de "+(pagoTotal-sueldo)+"$ por hacer comisiones");
+	}if (comisiones > 1 && comisiones <3) {
+		pagoTotal+=pagoTotal+100;
+                System.out.println("Se le añadio un valor extra de "+(pagoTotal-sueldo)+"$ por hacer comisiones");
+	}if (comisiones > 2 && comisiones <4) {
+		pagoTotal+=pagoTotal+150;
+                System.out.println("Se le añadio un valor extra de "+(pagoTotal-sueldo)+"$ por hacer comisiones");
+	}if (comisiones > 3 && comisiones <5) {
+        	pagoTotal+=pagoTotal+200;
+                System.out.println("Se le añadio un valor extra de "+(pagoTotal-sueldo)+"$ por hacer comisiones");
+	}if (comisiones > 4 && comisiones <6) {		
+		pagoTotal+=pagoTotal+250;
+                System.out.println("Se le añadio un valor extra de "+(pagoTotal-sueldo)+"$ por hacer comisiones");
+        }
+        return pagoTotal;
+    }
 }

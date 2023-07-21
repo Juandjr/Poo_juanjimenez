@@ -24,41 +24,22 @@ public class Limpieza extends Personal {
 	//metodo que se heredo de la clase padre que elabora la funcion para devolver el sueldo a pagar del de la limpieza
 	@Override
 	public double metodoDePago(double pagoTotal) {
-		pagoTotal=sueldo;
-		System.out.println("===Comisiones que realizo el Trabajador===");
-		System.out.println("1.Llego pronto");
-		System.out.println("2.Cumple sus actividades a tiempo");
-		System.out.println("3.Ayuda a sus compañeros");
-		System.out.println("4.Boto la basura");
-		System.out.println("5.Realizo horas extras");
-		System.out.println("6.salir");
-		opc=sc.nextInt();
-		while(comisiones!=6) {
-			switch (comisiones) {
-			case 1:
-				System.out.println("Se le añadio un valor extra de 50$ por la comision");
-				pagoTotal=sueldo+50;
-				break;
-			case 2:
-				System.out.println("Se le añadio un valor extra de 100$ por la comision");
-				pagoTotal=sueldo+100;
-				break;
-			case 3:
-				System.out.println("Se le añadio un valor extra de 150$ por la comision");
-				pagoTotal=pagoTotal+150;
-				break;
-			case 4:
-				System.out.println("Se le añadio un valor extra de 200$ por la comision");
-				pagoTotal=pagoTotal+200;
-				break;
-			case 5:
-				System.out.println("Se le añadio un valor extra de 250$ por la comision");
-				pagoTotal=pagoTotal+250;
-				break;
-			default: 
-				System.out.println("opcion no valida");
-				break;
-		}	
+	pagoTotal=sueldo;
+	if (comisiones > 0 && comisiones <2) {
+		pagoTotal+=pagoTotal+50;
+                       System.out.println("Se le añadio un valor extra de "+(pagoTotal-sueldo)+"$ por hacer comisiones");
+	}if (comisiones > 1 && comisiones <3) {
+		pagoTotal+=pagoTotal+100;
+                System.out.println("Se le añadio un valor extra de "+(pagoTotal-sueldo)+"$ por hacer comisiones");
+	}if (comisiones > 2 && comisiones <4) {
+		pagoTotal+=pagoTotal+150;
+                System.out.println("Se le añadio un valor extra de "+(pagoTotal-sueldo)+"$ por hacer comisiones");
+	}if (comisiones > 3 && comisiones <5) {
+        	pagoTotal+=pagoTotal+200;
+                System.out.println("Se le añadio un valor extra de "+(pagoTotal-sueldo)+"$ por hacer comisiones");
+	}if (comisiones > 4 && comisiones <6) {		
+		pagoTotal+=pagoTotal+250;
+                System.out.println("Se le añadio un valor extra de "+(pagoTotal-sueldo)+"$ por hacer comisiones");	
 	}if(merito) {
 		System.out.println("Se le añadio un valor extra de 100$ por su merito por hacer un exelente trabajo");
 		pagoTotal=pagoTotal+100;	
